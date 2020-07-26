@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Walgreens</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" > -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+    <script src="js/jquery.verySimpleImageViewer.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+</head>
+
+<body>
+    <div id="overlay" onclick="off()">
+
+    </div>
+    <div class="container-fluid">
+        <!-- pag1 start -->
+
+        <div class="row wrapperPage" id="page1">
+            <header>
+                <div class="col-xs-3  ">
+                    <h1>
+                        <a href="#"><img src="img/wbg_logo.jpg" /></a>
+                    </h1>
+                </div>
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                    <div class="input-group">
+                        <div class="input-group-btn search-panel">
+                            <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                     <span id="search_concept">All</span> <span class="caret"></span>
+                     </button>
+                            <ul class="dropdown-menu scrollable-dropdown" role="menu">
+                                <li><a href="#">Health and Parmacy</a></li>
+                                <li><a href="#">Parmacy</a></li>
+
+                            </ul>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" id="search_param">
+                        <input type="text" style="border-left:0;" class="form-control searchInput" name="x" id="search" placeholder="Search">
+                        <span class="input-group-btn">
+                  <button class="btn btn-default search"  style="border-left:0;" type="button">
+                  <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <a class="tcsLogo" target="_blank" href="https://www.tcs.com"><img src="img/tcs_logo.jpg" /></a>
+                    <a class="notofication" onclick="on()" href="#"><img src="img/notification.jpg" /></a>
+                    <a class="menu1" href="#"></a>
+                </div>
+                <div class="notificationBlock" style="display: none;">
+                    <ul>
+                        <li>
+                            <div class="lBlock">
+                                <p>
+                                    ID #00012341
+                                </p>
+                                <p>
+                                    <b>Requestor name</b> - John Smith
+                                </p>
+                                <p>
+                                    <b>Date</b>- 01/07/2020 | <b>Time</b>- 10.00 AM
+
+                                </p>
+                            </div>
+                            <div class="rBlock"><img src="img/user_small.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="lBlock">
+                                <p>
+                                    ID #00012341
+                                </p>
+                                <p>
+                                    <b>Requestor name</b> - John Smith
+                                </p>
+                                <p>
+                                    <b>Date</b>- 01/07/2020 | <b>Time</b>- 10.00 AM
+
+                                </p>
+                            </div>
+                            <div class="rBlock"><img src="img/user_small.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="lBlock">
+                                <p>
+                                    ID #00012341
+                                </p>
+                                <p>
+                                    <b>Requestor name</b> - John Smith
+                                </p>
+                                <p>
+                                    <b>Date</b>- 01/07/2020 | <b>Time</b>- 10.00 AM
+
+                                </p>
+                            </div>
+                            <div class="rBlock"><img src="img/user_small.jpg"></div>
+                        </li>
+                        <li>
+                            <div class="lBlock">
+                                <p>
+                                    ID #00012341
+                                </p>
+                                <p>
+                                    <b>Requestor name</b> - John Smith
+                                </p>
+                                <p>
+                                    <b>Date</b>- 01/07/2020 | <b>Time</b>- 10.00 AM
+
+                                </p>
+                            </div>
+                            <div class="rBlock"><img src="img/user_small.jpg"></div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="container-fluid">
+                <div class="row column ">
+                    <div class="col-sm-3 columnOne">
+                        <h3>My space</h3>
+                        <ul class="List">
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">Boots Intranet</a></li>
+                            <li><a href="#">Mytime</a></li>
+                            <li><a href="#">Photo kisok</a></li>
+                            <li><a href="#">My store data </a></li>
+                            <li><a href="#">system information system</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">Boots Intranet</a></li>
+                            <li><a href="#">Mytime</a></li>
+                            <li><a href="#">Photo kisok</a></li>
+                            <li><a href="#">My store data </a></li>
+                            <li><a href="#">system information system</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 columnTwo">
+                        <h3></h3>
+                        <div class="">
+
+                            <div id="myCarousel" class="carousel slide">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li class="item1 active"></li>
+                                    <li class="item2"></li>
+                                    <li class="item3"></li>
+
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="img/img1.jpg" alt="" width="100%">
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/img2.jpg" alt="" width="100%">
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/img3.jpg" alt="" width="100%">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="activityBlock">
+                            <h2>Recent Activity <span>Admin activity</span></h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <strong>Abacus</strong>
+                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                    </p>
+                                    <p>
+                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Abacus</strong>
+                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                    </p>
+                                    <p>
+                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Abacus</strong>
+                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                    </p>
+                                    <p>
+                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Abacus</strong>
+                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                    </p>
+                                    <p>
+                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Abacus</strong>
+                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                    </p>
+                                    <p>
+                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3 columnThree">
+
+
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Trending</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Tag cloud</a></li>
+
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                                <ul class="List">
+                                    <li><a href="#">Abacus</a></li>
+                                    <li><a href="#">Unica</a></li>
+                                    <li><a href="#">Boots Intranet</a></li>
+                                    <li><a href="#">Mytime</a></li>
+                                    <li><a href="#">Photo kisok</a></li>
+                                    <li><a href="#">My store data </a></li>
+                                    <li><a href="#">system information system</a></li>
+                                    <li><a href="#">Abacus</a></li>
+                                    <li><a href="#">Unica</a></li>
+                                    <li><a href="#">Boots Intranet</a></li>
+                                    <li><a href="#">Mytime</a></li>
+                                    <li><a href="#">Photo kisok</a></li>
+                                    <li><a href="#">My store data </a></li>
+                                    <li><a href="#">system information system</a></li>
+                                </ul>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <ul class="cloud">
+                                    <li><a href="#">Abacus</a></li>
+                                    <li><a href="#">Unica</a></li>
+                                    <li><a href="#">Boots Intranet</a></li>
+                                    <li><a href="#">Mytime</a></li>
+                                    <li><a href="#">Photo kisok</a></li>
+                                    <li><a href="#">My store data </a></li>
+                                    <li><a href="#">system information system</a></li>
+                                    <li><a href="#">Abacus</a></li>
+                                    <li><a href="#">Unica</a></li>
+                                    <li><a href="#">Boots Intranet</a></li>
+                                    <li><a href="#">Mytime</a></li>
+                                    <li><a href="#">Photo kisok</a></li>
+                                    <li><a href="#">My store data </a></li>
+                                    <li><a href="#">system information system</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="push"></div> -->
+            </div>
+            <footer>
+                <ul>
+                    <li>
+                        <a href="#" class="test">
+                            <h1>Health and pharmacy</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="test">
+                            <h1>Retail and supply chain</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="test">
+                            <h1>Business services</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="test">
+                            <h1>Customer</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="test">
+                            <h1>Sap</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" />
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <!-- pag1 end -->
+        <!-- pag2 start -->
+        <div class="row wrapperPage2" id="page2" style="display: none;">
+            <header>
+                <div class="col-xs-3  ">
+                    <h1>
+                        <a href="#"><img src="img/wbg_logo.jpg" /></a>
+                    </h1>
+                </div>
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                    <div class="input-group">
+                        <div class="input-group-btn search-panel">
+                            <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                             <span id="search_concept">All</span> <span class="caret"></span>
+                             </button>
+                            <ul class="dropdown-menu scrollable-dropdown" role="menu">
+                                <li><a href="#">Health and Parmacy</a></li>
+                                <li><a href="#">Parmacy</a></li>
+
+                            </ul>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" id="search_param">
+                        <input type="text" style="border-left:0;" class="form-control searchInput" name="x" id="search" placeholder="Search">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default search"  style="border-left:0;" type="button">
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <a class="tcsLogo" target="_blank" href="https://www.tcs.com"><img src="img/tcs_logo.jpg" /></a>
+                    <a class="notofication" href="#"><img src="img/notification.jpg" /></a>
+                    <a class="pageClose" href="#"></a>
+                </div>
+
+            </header>
+            <div class="container-fluid">
+                <div class="row customerDetails">
+                    <h2>Customer </h2>
+                    <img src="img/user_small.jpg" />
+                    <p> <b> Owner name -</b> John smith |</p>
+                    <p><b>Email id - John.smith@abc.com</b>
+                    </p>
+                </div>
+                <div class="row " style="min-height:600px;">
+                    <div class="col-sm-3 gridGroup">
+                        <h2>Applications</h2>
+                        <ul class="page2Menu">
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">PC+local</a></li>
+                            <li><a href="#">Boots learning management system</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">PC+local</a></li>
+                            <li><a href="#">Boots learning management system</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">PC+local</a></li>
+                            <li><a href="#">Boots learning management system</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 gridGroup2">
+
+                        <ul class="page2Menu">
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">PC+local</a></li>
+                            <li><a href="#">Boots learning management system</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">PC+local</a></li>
+                            <li><a href="#">Boots learning management system</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">PC+local</a></li>
+                            <li><a href="#">Boots learning management system</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+
+                        <ul class="page2Menu">
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">PC+local</a></li>
+                            <li><a href="#">Boots learning management system</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">PC+local</a></li>
+                            <li><a href="#">Boots learning management system</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Unica</a></li>
+                            <li><a href="#">PC+local</a></li>
+                            <li><a href="#">Boots learning management system</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                            <li><a href="#">testing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 gridGroup gridGroup2 ">
+                        <h2>Training Content</h2>
+                        <ul class="page2Menu">
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                        </ul>
+                        <h2>Integrated Process Maps</h2>
+                        <ul class="page2Menu">
+                            <li><a href="#">SVOC</a></li>
+                            <li><a href="#">Abacus</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="push2"></div> -->
+            </div>
+            <footer class="smallFooter">
+                <nav>
+                    <a href="#">Applications</a>
+                    <a href="#">Health and Pharmacy</a>
+                    <a href="#">Retail and Supply Chain</a>
+                    <a href="#">Business services</a>
+                    <a href="#">Sap</a>
+                </nav>
+            </footer>
+        </div>
+        <!-- pag2 end -->
+        <!-- pag3 start -->
+        <div class="row wrapperPage3" id="page3" style="display: none;">
+            <header>
+                <div class="col-xs-3  ">
+                    <h1>
+                        <a href="#"><img src="img/wbg_logo.jpg" /></a>
+                    </h1>
+                </div>
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                    <div class="input-group">
+                        <div class="input-group-btn search-panel">
+                            <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                     <span id="search_concept">All</span> <span class="caret"></span>
+                                     </button>
+                            <ul class="dropdown-menu scrollable-dropdown" role="menu">
+                                <li><a href="#">Health and Parmacy</a></li>
+                                <li><a href="#">Parmacy</a></li>
+
+                            </ul>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" id="search_param">
+                        <input type="text" style="border-left:0;" class="form-control searchInput" name="x" id="search" placeholder="Search">
+                        <span class="input-group-btn">
+                                  <button class="btn btn-default search"  style="border-left:0;" type="button">
+                                  <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <a class="tcsLogo" target="_blank" href="https://www.tcs.com"><img src="img/tcs_logo.jpg" /></a>
+                    <a class="notofication" href="#"><img src="img/notification.jpg" /></a>
+                    <a class="pageClose" href="#"></a>
+                </div>
+            </header>
+
+            <div class="container-fluid">
+                <div class="row" style="min-height:600px;">
+
+                    <nav class="mainTabs">
+                        <a onclick="tabs('content1')" onmouseover="tabHover('content1',this)" href="javascript:void(null)">
+                            <h1>Health and pharmacy</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" /></a>
+                        <a onclick="tabs('content2')" onmouseover="tabHover('content2',this)" href="javascript:void(null)">
+                            <h1>Health and pharmacy</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" /></a>
+                        <a onclick="tabs('content3')" onmouseover="tabHover('content3',this)" href="javascript:void(null)">
+                            <h1>Health and pharmacy</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" /></a>
+                        <a onclick="tabs('content4')" onmouseover="tabHover('content4',this)" href="javascript:void(null)" class="active">
+                            <h1>Health and pharmacy</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" /></a>
+                        <a onclick="tabs('content5')" onmouseover="tabHover('content5',this)" href="javascript:void(null)">
+                            <h1>Health and pharmacy</h1>
+                            <p>Owner name - <span>Sandeep</span> </p>
+                            <p>Email id - <span>Sandeep@abc.com</span> </p>
+                            <img src="img/user.jpg" /></a>
+                    </nav>
+                    <div id="content1" style="background: red; display:none" class="tabs">
+                        <ul>
+                            <li>
+                                <a href="#" class="active"> <img src="img/icon1.png" />Applications
+
+                                </a>
+                                <section>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                            <li><a href="#">Photo Kisok</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Photo Kisok
+                                                </a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system </a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Boots Intranet
+                                                </a></li>
+                                            <li><a href="#">MystoreNet</a></li>
+                                            <li><a href="#">Bootslive</a></li>
+                                            <li><a href="#">Hadoop</a></li>
+                                            <li><a href="#">Talend</a></li>
+                                            <li><a href="#">Tibco Spotfire</a></li>
+                                            <li><a href="#">Store Self Audit (Boots Live)</a></li>
+                                            <li><a href="#">Waste Management Reporting</a></li>
+                                            <li><a href="#">Tradestone integration</a></li>
+                                            <li><a href="#">BORIS
+                                                </a></li>
+                                            <li><a href="#">Automatic Number Plate Recognition (AnPR)</a></li>
+                                            <li><a href="#">Traffic Bacloading (MS access)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Mysites (Boots Live)</a></li>
+                                            <li><a href="#">Experian Payment Gateway</a></li>
+                                            <li><a href="#">ERRMS</a></li>
+                                            <li><a href="#">
+                                                    CSC Archive Portal</a></li>
+                                            <li><a href="#">Teamsite</a></li>
+                                            <li><a href="#">Prisym</a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <a href="#" class="int"> <img src="img/icon2.png" /> Integrated process Maps</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon3.png" />Training content</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon4.png" />Reference documents</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="content2" style="background:green; display:none;" class="tabs">
+                        <ul>
+                            <li>
+                                <a href="#" class="active"> <img src="img/icon1.png" />Applications
+
+                                </a>
+                                <section>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                            <li><a href="#">Photo Kisok</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Photo Kisok
+                                                </a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system </a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Boots Intranet
+                                                </a></li>
+                                            <li><a href="#">MystoreNet</a></li>
+                                            <li><a href="#">Bootslive</a></li>
+                                            <li><a href="#">Hadoop</a></li>
+                                            <li><a href="#">Talend</a></li>
+                                            <li><a href="#">Tibco Spotfire</a></li>
+                                            <li><a href="#">Store Self Audit (Boots Live)</a></li>
+                                            <li><a href="#">Waste Management Reporting</a></li>
+                                            <li><a href="#">Tradestone integration</a></li>
+                                            <li><a href="#">BORIS
+                                                </a></li>
+                                            <li><a href="#">Automatic Number Plate Recognition (AnPR)</a></li>
+                                            <li><a href="#">Traffic Bacloading (MS access)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Mysites (Boots Live)</a></li>
+                                            <li><a href="#">Experian Payment Gateway</a></li>
+                                            <li><a href="#">ERRMS</a></li>
+                                            <li><a href="#">
+                                                    CSC Archive Portal</a></li>
+                                            <li><a href="#">Teamsite</a></li>
+                                            <li><a href="#">Prisym</a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <a href="#" class="int"> <img src="img/icon2.png" /> Integrated process Maps</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon3.png" />Training content</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon4.png" />Reference documents</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="content3" style="background:orange;" class="tabs">
+                        <ul>
+                            <li>
+                                <a href="#" class="active"> <img src="img/icon1.png" />Applications
+
+                                </a>
+                                <section>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                            <li><a href="#">Photo Kisok</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Photo Kisok
+                                                </a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system </a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Boots Intranet
+                                                </a></li>
+                                            <li><a href="#">MystoreNet</a></li>
+                                            <li><a href="#">Bootslive</a></li>
+                                            <li><a href="#">Hadoop</a></li>
+                                            <li><a href="#">Talend</a></li>
+                                            <li><a href="#">Tibco Spotfire</a></li>
+                                            <li><a href="#">Store Self Audit (Boots Live)</a></li>
+                                            <li><a href="#">Waste Management Reporting</a></li>
+                                            <li><a href="#">Tradestone integration</a></li>
+                                            <li><a href="#">BORIS
+                                                </a></li>
+                                            <li><a href="#">Automatic Number Plate Recognition (AnPR)</a></li>
+                                            <li><a href="#">Traffic Bacloading (MS access)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Mysites (Boots Live)</a></li>
+                                            <li><a href="#">Experian Payment Gateway</a></li>
+                                            <li><a href="#">ERRMS</a></li>
+                                            <li><a href="#">
+                                                    CSC Archive Portal</a></li>
+                                            <li><a href="#">Teamsite</a></li>
+                                            <li><a href="#">Prisym</a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <a href="#" class="int"> <img src="img/icon2.png" /> Integrated process Maps</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon3.png" />Training content</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon4.png" />Reference documents</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div id="content4" style="background:yellow; display:none;" class="tabs">
+                        <ul>
+                            <li>
+                                <a href="#" class="active"> <img src="img/icon1.png" />Applications
+
+                                </a>
+                                <section>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                            <li><a href="#">Photo Kisok</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Photo Kisok
+                                                </a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system </a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Boots Intranet
+                                                </a></li>
+                                            <li><a href="#">MystoreNet</a></li>
+                                            <li><a href="#">Bootslive</a></li>
+                                            <li><a href="#">Hadoop</a></li>
+                                            <li><a href="#">Talend</a></li>
+                                            <li><a href="#">Tibco Spotfire</a></li>
+                                            <li><a href="#">Store Self Audit (Boots Live)</a></li>
+                                            <li><a href="#">Waste Management Reporting</a></li>
+                                            <li><a href="#">Tradestone integration</a></li>
+                                            <li><a href="#">BORIS
+                                                </a></li>
+                                            <li><a href="#">Automatic Number Plate Recognition (AnPR)</a></li>
+                                            <li><a href="#">Traffic Bacloading (MS access)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Mysites (Boots Live)</a></li>
+                                            <li><a href="#">Experian Payment Gateway</a></li>
+                                            <li><a href="#">ERRMS</a></li>
+                                            <li><a href="#">
+                                                    CSC Archive Portal</a></li>
+                                            <li><a href="#">Teamsite</a></li>
+                                            <li><a href="#">Prisym</a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <a href="#" class="int"> <img src="img/icon2.png" /> Integrated process Maps</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon3.png" />Training content</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon4.png" />Reference documents</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="content5" style="background:pink; display:none;" class="tabs">
+                        <ul>
+                            <li>
+                                <a href="#" class="active"> <img src="img/icon1.png" />Applications
+
+                                </a>
+                                <section>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                            <li><a href="#">Photo Kisok</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+                                            <li><a href="#">Unica</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Photo Kisok
+                                                </a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system </a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">Pc+local</a></li>
+                                            <li><a href="#">Boots Learning Mangment system</a></li>
+                                            <li><a href="#">IBM Kenexa Recruitment systems</a></li>
+                                            <li><a href="#">MyTime</a></li>
+                                            <li><a href="#">Svoc</a></li>
+                                            <li><a href="#">ABACUS</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Boots Intranet
+                                                </a></li>
+                                            <li><a href="#">MystoreNet</a></li>
+                                            <li><a href="#">Bootslive</a></li>
+                                            <li><a href="#">Hadoop</a></li>
+                                            <li><a href="#">Talend</a></li>
+                                            <li><a href="#">Tibco Spotfire</a></li>
+                                            <li><a href="#">Store Self Audit (Boots Live)</a></li>
+                                            <li><a href="#">Waste Management Reporting</a></li>
+                                            <li><a href="#">Tradestone integration</a></li>
+                                            <li><a href="#">BORIS
+                                                </a></li>
+                                            <li><a href="#">Automatic Number Plate Recognition (AnPR)</a></li>
+                                            <li><a href="#">Traffic Bacloading (MS access)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="listContainer">
+                                            <li><a href="#">Mysites (Boots Live)</a></li>
+                                            <li><a href="#">Experian Payment Gateway</a></li>
+                                            <li><a href="#">ERRMS</a></li>
+                                            <li><a href="#">
+                                                    CSC Archive Portal</a></li>
+                                            <li><a href="#">Teamsite</a></li>
+                                            <li><a href="#">Prisym</a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <a href="#" class="int"> <img src="img/icon2.png" /> Integrated process Maps</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon3.png" />Training content</a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="img/icon4.png" />Reference documents</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--menu will start here-->
+                    <!-- <nav>
+                        <ul class="menuGroup">
+                            <li class="active">
+                                <a href="#">Item 1</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Sub-item 1</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Sub-item 1</a></li>
+                                            <li><a href="#">Sub-item 2</a></li>
+                                            <li><a href="#">Sub-item 3</a></li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Sub-item 2</a></li>
+                                    <li><a href="#">Sub-item 3</a></li>
+                                    <li><a href="#">Sub-item 4</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Item 2</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Sub-item 1</a></li>
+                                    <li><a href="#">Sub-item 2</a></li>
+                                    <li><a href="#">Sub-item 3</a></li>
+                                    <li><a href="#">Sub-item 4</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Item 3</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Sub-item 1</a></li>
+                                    <li><a href="#">Sub-item 2</a></li>
+                                    <li><a href="#">Sub-item 3</a></li>
+                                    <li><a href="#">Sub-item 4</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Item 4</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Sub-item 1</a></li>
+                                    <li><a href="#">Sub-item 2</a></li>
+                                    <li><a href="#">Sub-item 3</a></li>
+                                    <li><a href="#">Sub-item 4</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Item 5</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Sub-item 1</a></li>
+                                    <li><a href="#">Sub-item 2</a></li>
+                                    <li><a href="#">Sub-item 3</a></li>
+                                    <li><a href="#">Sub-item 4</a></li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav> -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- pag3 end -->
+        <!-- pag4 start -->
+
+        <div class="row wrapperPage3" id="page4" style="display: none;">
+
+            <header>
+                <div class="col-xs-3  ">
+                    <h1>
+                        <a href="#"><img src="img/wbg_logo.jpg" /></a>
+                    </h1>
+                </div>
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                    <div class="input-group">
+                        <div class="input-group-btn search-panel">
+                            <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                     <span id="search_concept">All</span> <span class="caret"></span>
+                     </button>
+                            <ul class="dropdown-menu scrollable-dropdown" role="menu">
+                                <li><a href="#">Health and Parmacy</a></li>
+                                <li><a href="#">Parmacy</a></li>
+
+                            </ul>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" id="search_param">
+                        <input type="text" style="border-left:0;" class="form-control searchInput" name="x" id="search" placeholder="Search">
+                        <span class="input-group-btn">
+                  <button class="btn btn-default search"  style="border-left:0;" type="button">
+                  <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <a class="tcsLogo" target="_blank" href="https://www.tcs.com"><img src="img/tcs_logo.jpg" /></a>
+                    <a class="notofication" href="#"><img src="img/notification.jpg" /></a>
+                    <a class="menu1" href="#"></a>
+                </div>
+            </header>
+
+            <div class="breadCrembBlock">
+                <div class="col-xs-6 leftBlock">
+                    <p>Customer > Application > Svoc </p>
+                </div>
+                <div class="col-xs-6 ">
+                    <div class="rightBlock">
+                        <nav>
+                            <a href="#" class="edit"><img src="img/icon_edit.png" />Edit</a>
+                            <a href="#"> <img src="img/icon_save.png" />Save</a>
+                            <a href="#" class="export"> <img src="img/icon_export.png" />Export</a>
+                        </nav>
+                        <div style="display: none" class="editBlock">
+                            <p>Do you want edit this section</p>
+                            <a href="#" class="yes">Yes</a>
+                            <a href="#" class="no">No</a>
+
+                        </div>
+                    </div>
+                    <a href="#" class="backButton"></a>
+                </div>
+            </div>
+
+            <div class="contentContainer">
+                <div class="col-xs-3 appList">
+
+
+                    <div class="">
+
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Functional Section</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+
+                                        <ol class="appListBlock">
+                                            <li>
+                                                <a href="#" class="menuList1">Purpose of the application</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menuList2">Overview of functionality and brief descriptions of boots SVOC application6</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 3</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 4</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 5</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 6</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Technical Section</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+
+                                        <ol class="appListBlock">
+                                            <li>
+                                                <a href="#" class="menuList1">Purpose of the application</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menuList2">Overview of functionality and brief descriptions of boots SVOC application6</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 3</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 4</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 5</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 6</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Operation Section</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+
+                                        <ol class="appListBlock">
+                                            <li>
+                                                <a href="#" class="menuList1">Purpose of the application</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menuList2">Overview of functionality and brief descriptions of boots SVOC application6</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 3</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 4</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 5</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Menu 6</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                    <li><a href="#">Sub Menu Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-xs-9 ">
+
+                    <div id="contentBlock1">
+
+                        <h2>Purpose of application</h2>
+
+                        <p>
+                            The SVoC (Single View of Customer) technology solution is a central customer database dynamically built by matching data relating to a single customer from various source systems into customer composite view. It has an inbuilt algorithm to compare the
+                            new incoming data and update the DB with the latest customer data and keep a track of the changes done.
+                        </p>
+
+                        <p>SVoC is an IBM MDM product that has been tailored to Boots requirements, hosted via WebSphere.</p>
+
+                        <p>Initially Boots didn’t haveany central customer database for AdCard & non-AdCard, so SVoC application was developed to store overall updated customer data for Boots landscape.</p>
+
+                        <h2>Overview of Functionality and Brief Descriptions of Boots SVoC Application
+                        </h2>
+
+                        <h3>Major Functionalities of SVoC:</h3>
+                        <p>SVoC acts as a customer master data for upstream and downstream applications, which stores the most updated customer data, that is been captured by multiple source systems.</p>
+                        <p>Key functionalities of SVoC are:</p>
+                        <ul>
+                            <li>Receive Data from multiple source systems</li>
+                            <li>Perform the Data validation and data cleaning by a level of validations and rules set in the middleware as well built-in in SVoC</li>
+                            <li>Store the Data in the Virtual Database</li>
+                            <li>Run algorithm to map the data to the existing customer records to map the incoming record as new customer or existing customer</li>
+                            <li>Store the details and create the composite view</li>
+                            <li>Trigger the composite view and incremental details to Physical DB and map it to Consent data.</li>
+                            <li>Create composite view with the most updated customer records and consent data</li>
+                            <li>Send the customer data to various downstream systems (ABACUS, Hadoop), and in future the consent and customer data will also get transferred from SVoC to ABACUS, Hadoop, SAP CRM and Hearing Care
+                            </li>
+
+                        </ul>
+                        <p> Business Functionalities:</p>
+                        <ul>
+                            <li>Acts as Central Database for Boots</li>
+                            <li>Stores Cleansed and most updated Customer Data</li>
+                            <li>Save source Applications Processing time</li>
+                            <li>Share Data to other applications for Analysis purposes</li>
+                            <li>Provides Composite view of customers Data</li>
+                        </ul>
+                        <p>Key Features:
+                        </p>
+                        <p>
+                            Single view of customer and central customer database dynamically built by matching data using algorithms relating to a single customer from various source systems </p>
+                    </div>
+
+                    <div id="contentBlock2" style="display: none;">
+
+                        <h2>Overview of Functionality and Brief Descriptions of Boots SVoC Application
+                        </h2>
+
+                        <h3>Major Functionalities of SVoC:</h3>
+                        <p>SVoC acts as a customer master data for upstream and downstream applications, which stores the most updated customer data, that is been captured by multiple source systems.</p>
+                        <p>Key functionalities of SVoC are:</p>
+                        <ul>
+                            <li>Receive Data from multiple source systems</li>
+                            <li>Perform the Data validation and data cleaning by a level of validations and rules set in the middleware as well built-in in SVoC</li>
+                            <li>Store the Data in the Virtual Database</li>
+                            <li>Run algorithm to map the data to the existing customer records to map the incoming record as new customer or existing customer</li>
+                            <li>Store the details and create the composite view</li>
+                            <li>Trigger the composite view and incremental details to Physical DB and map it to Consent data.</li>
+                            <li>Create composite view with the most updated customer records and consent data</li>
+                            <li>Send the customer data to various downstream systems (ABACUS, Hadoop), and in future the consent and customer data will also get transferred from SVoC to ABACUS, Hadoop, SAP CRM and Hearing Care
+                            </li>
+
+                        </ul>
+                        <p> Business Functionalities:</p>
+                        <ul>
+                            <li>Acts as Central Database for Boots</li>
+                            <li>Stores Cleansed and most updated Customer Data</li>
+                            <li>Save source Applications Processing time</li>
+                            <li>Share Data to other applications for Analysis purposes</li>
+                            <li>Provides Composite view of customers Data</li>
+                        </ul>
+                        <p>Key Features:
+                        </p>
+                        <p>
+                            Single view of customer and central customer database dynamically built by matching data using algorithms relating to a single customer from various source systems </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- pag4 end -->
+
+        <!-- page5 start -->
+        <div class="row wrapperPage" id="page5" style="display: none;">
+            <header>
+                <div class="col-xs-3  ">
+                    <h1>
+                        <a href="#"><img src="img/wbg_logo.jpg" /></a>
+                    </h1>
+                </div>
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                    <div class="input-group">
+                        <div class="input-group-btn search-panel">
+                            <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                     <span id="search_concept">All</span> <span class="caret"></span>
+                     </button>
+                            <ul class="dropdown-menu scrollable-dropdown" role="menu">
+                                <li><a href="#">Health and Parmacy</a></li>
+                                <li><a href="#">Parmacy</a></li>
+
+                            </ul>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" id="search_param">
+                        <input type="text" style="border-left:0;" class="form-control searchInput" name="x" id="search" placeholder="Search">
+                        <span class="input-group-btn">
+                  <button class="btn btn-default search"  style="border-left:0;" type="button">
+                  <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <a class="tcsLogo" target="_blank" href="https://www.tcs.com"><img src="img/tcs_logo.jpg" /></a>
+                    <a class="notofication" href="#"><img src="img/notification.jpg" /></a>
+                    <a class="menu1" href="#"></a>
+                </div>
+            </header>
+            <div class="container-fluid">
+
+                <div class="row integratedBlock">
+                    <p> Customer > <b>Integrated Process Maps</b> </p>
+                </div>
+
+                <div id="jquery-script-menu">
+                    <div class="jquery-script-center">
+
+                        <div class="jquery-script-ads">
+                            <!-- <script type="text/javascript">
+                               
+                                google_ad_client = "ca-pub-2783044520727903";
+                                /* jQuery_demo */
+                                google_ad_slot = "2780937993";
+                                google_ad_width = 728;
+                                google_ad_height = 90;
+                                //
+                            </script> -->
+                            <script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+                            </script>
+                        </div>
+                        <div class="jquery-script-clear"></div>
+                    </div>
+                </div>
+                <!-- <h1>Simple Image Viewer Plugin Example</h1> -->
+                <div id="imageViewerContainer" style="width: 764px; height:610px;"></div>
+                <script>
+                    // var curect_file_path = "https://picsum.photos/1600/1200/?random";
+                    $("#imageViewerContainer").verySimpleImageViewer({
+                        imageSource: "img/img_diagram.jpg",
+                        frame: ['100%', '100%'],
+                        maxZoom: '900%',
+                        zoomFactor: '10%',
+                        mouse: true,
+                        keyboard: true,
+                        toolbar: true,
+                        // rotateToolbar: true
+                    });
+                </script>
+            </div>
+            <footer></footer>
+        </div>
+        <!-- page5 end -->
+
+    </div>
+</body>
+
+</html>
