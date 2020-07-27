@@ -7,19 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" > -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js"></script>
     <script src="js/jquery.verySimpleImageViewer.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 </head>
 
@@ -58,7 +52,7 @@
                 </div>
                 <div class="col-xs-4">
                     <a class="tcsLogo" target="_blank" href="https://www.tcs.com"><img src="img/tcs_logo.jpg" /></a>
-                    <a class="notification" onclick="notification()" href="javascript:;"><img src="img/notification.jpg" /></a>
+                    <a class="notification" onclick="notification()" href="#"><img src="img/notification.jpg" /></a>
                     <a class="menu1" href="#"></a>
                 </div>
                 <div class="notificationBlock" style="display: none;">
@@ -1831,57 +1825,83 @@
                     </ul>
                 </div>
             </header>
-            <div class="adminDetails"></div>
+            <div class="adminDetails">
+                <h3>Admin activity</h3>
+                <nav>
+                    <a href="#" class="active">New Requests</a>
+                    <a href="#">Published Pages</a>
+                    <a href="#">Rejected Pages</a>
+                    <a href="#">WIP Pages</a>
+                </nav>
+                <a href="#" class="adminClose">close</a>
+            </div>
             <div class="contentContainer">
                 <div class="adminActivity col-xs-4">
                     <ul>
-                        <li>
-                            <p>01/07/2020 | 10.00 Am(IST)</p>
-                            <p>John smith | 12345</p>
-                            <p>Title - Changes in SVOC > Overview of Functionality and Brief Descriptions of Boots SVOC Application6 </p>
-                            <p>Data - overview functionality and Brief</p>
+                        <li class="active">
+                            <p><b>01/07/2020 | 10.00 Am(IST)</b></p>
+                            <p><b>John smith | 12345</b></p>
+                            <p><b>Title</b> - Changes in SVOC > Overview of Functionality and Brief Descriptions of Boots SVOC Application6 </p>
+                            <p><b>Data</b> - overview functionality and Brief</p>
                         </li>
                         <li>
-                            <p>01/07/2020 | 10.00 Am(IST)</p>
-                            <p>John smith | 12345</p>
-                            <p>Title - Changes in SVOC > Overview of Functionality and Brief Descriptions of Boots SVOC Application6 </p>
-                            <p>Data - overview functionality and Brief</p>
+                            <p><b>01/07/2020 | 10.00 Am(IST)</b></p>
+                            <p><b>John smith | 12345</b></p>
+                            <p><b>Title</b> - Changes in SVOC > Overview of Functionality and Brief Descriptions of Boots SVOC Application6 </p>
+                            <p><b>Data</b> - overview functionality and Brief</p>
                         </li>
                         <li>
-                            <p>01/07/2020 | 10.00 Am(IST)</p>
-                            <p>John smith | 12345</p>
-                            <p>Title - Changes in SVOC > Overview of Functionality and Brief Descriptions of Boots SVOC Application6 </p>
-                            <p>Data - overview functionality and Brief</p>
+                            <p><b>01/07/2020 | 10.00 Am(IST)</b></p>
+                            <p><b>John smith | 12345</b></p>
+                            <p><b>Title</b> - Changes in SVOC > Overview of Functionality and Brief Descriptions of Boots SVOC Application6 </p>
+                            <p><b>Data</b> - overview functionality and Brief</p>
                         </li>
                         <li>
-                            <p>01/07/2020 | 10.00 Am(IST)</p>
-                            <p>John smith | 12345</p>
-                            <p>Title - Changes in SVOC > Overview of Functionality and Brief Descriptions of Boots SVOC Application6 </p>
-                            <p>Data - overview functionality and Brief</p>
+                            <p><b>01/07/2020 | 10.00 Am(IST)</b></p>
+                            <p><b>John smith | 12345</b></p>
+                            <p><b>Title</b> - Changes in SVOC > Overview of Functionality and Brief Descriptions of Boots SVOC Application6 </p>
+                            <p><b>Data</b> - overview functionality and Brief</p>
                         </li>
                     </ul>
                 </div>
 
                 <div class="requestBlock col-xs-8">
-                    Userid
+
+                    <section>
+                        <p><b>User Id-</b> 12345 | <b>User Name -</b> John Smith</p>
+                        <p><b>Title -</b> Changes in SVOC > Overview of Functionality and Brief Descriptons of Boots SVOC Application 6</p>
+                        <p><b>Data -</b></p>
+                        <h6>
+                            SVoC > Overview of Functionality and Brief Descriptions of Boots SVoc Application 6 > Paragraph 1-
+                        </h6>
+                        <div>
+                            <p><b>Old-</b> Overview of Functionality and Brief Descirptions of Boots SVoc Application 6</p>
+                            <p class="new">
+                                <a href="#"></a>
+                                <b>New -</b> Overview of Functionality & Brief Descirptions of Boots SVoc Application 6</p>
+
+                            <ul class="approveBlock" style="display: none;">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon_notify.png" /> Need clarification</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <img src="img/icon_approve.png" />Approve</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <img src="img/icon_reject.png" />Reject</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
                 </div>
             </div>
-            <!-- <div class="container-fluid adminBlock">
-                <div class="adminDetails ">
-                    test
-                </div>
-                <div class="adminContent row">
-                  
-
-                </div>
-            </div> -->
-
         </div>
-
+        <!-- page6 end -->
     </div>
-    <div id="overlay">
-
-    </div>
+    <!-- Main container end -->
+    <div id="overlay"></div>
 </body>
 
 </html>

@@ -17,10 +17,6 @@ $(document).ready(function() {
 
 });
 
-// $(document).ready(function() {
-//     var i = 0; //get from storrage
-//     $(".mainTabs a").eq(i).addClass('active');
-// });
 
 $(document).ready(function() {
 
@@ -51,6 +47,15 @@ $(document).ready(function() {
         $("#page6").hide();
     });
 
+
+    $("a.adminClose").click(function() {
+        $("#page4").show();
+        $("#page1").hide();
+        $("#page2").hide();
+        $("#page3").hide();
+        $("#page5").hide();
+        $("#page6").hide();
+    });
 
     $("ul.page2Menu li a").click(function() {
         $("#page4").show();
@@ -136,6 +141,21 @@ $(document).ready(function() {
 
     });
 
+
+    $("p.new a").click(function() {
+        debugger
+        $("ul.approveBlock").toggle();
+        $("p.new a").toggleClass("active");
+
+    });
+    // $("ul.approveBlock li a").click(function() {
+    //     $("ul.approveBlock").hide();
+
+    // });
+
+
+
+
     $("a.menuList1").click(function() {
         $("#contentBlock1").show();
         $("#contentBlock2").hide();
@@ -158,14 +178,6 @@ $(document).ready(function() {
 
 });
 
-// function on() {
-//     document.getElementById("overlay").style.display = "block";
-// }
-
-// function off() {
-//     document.getElementById("overlay").style.display = "none";
-// }
-
 function tabs(id) {
     $('.tabs').hide();
     $('#' + id).show();
@@ -183,7 +195,7 @@ function tabHover(id, obj) {
 $(document).ready(function() {
     // Activate Carousel
     $("#myCarousel").carousel({
-        interval: 1000
+        interval: 3000
     });
 
     // Enable Carousel Indicators
@@ -221,11 +233,3 @@ $(document).on('keydown', function(event) {
         $('.notificationBlock').hide();
     }
 });
-// var a = document.getElementByTagName('a').item(0);
-// $(a).on('keyup', function(evt) {
-//     console.log(evt);
-//     if (evt.keycode === 13) {
-
-//         alert('search?');
-//     }
-// });
