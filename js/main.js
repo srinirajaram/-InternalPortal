@@ -20,6 +20,12 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
+    $("#imageViewerContainer img").attr("usemap", "#image-map");
+    // $("#imageViewerContainer img").attr("left", "0px");
+    //$("#imageViewerContainer img").attr("position", "relative");
+    $("#imageViewerContainer img").css("position", "relative");
+    $("#imageViewerContainer img").css("left", '0px;!important');
+
     $("a.test").click(function() {
         $("#page1").hide();
         $("#page2").show();
@@ -134,6 +140,7 @@ $(document).ready(function() {
 
     $(".edit").click(function() {
         $(".editBlock").show();
+        $(".exportBlock").hide();
 
     });
     $(".editBlock a").click(function() {
@@ -141,9 +148,48 @@ $(document).ready(function() {
 
     });
 
+    $("a.yes").click(function() {
+        $("a.edit").hide();
+        $("a.reset").show();
+
+    });
+    $("a.save").click(function() {
+        $("a.publish").show();
+        $("a.save").hide();
+    });
+
+
+    $("a.publish").click(function() {
+        $(".publishBlock").show();
+        $(".editBlock").hide();
+        $(".exportBlock").hide();
+        $('#overlay').toggle();
+        $('body').css('overflow', 'hidden');
+    });
+
+    $(".publishBlock a").click(function() {
+        $("#page2").show();
+        $("#page1").hide();
+        $("#page4").hide();
+        $("#page3").hide();
+        $("#page5").hide();
+        $("#page6").hide();
+        $(".publishBlock").hide();
+        $(".publish").hide();
+        $(".reset").hide();
+        $("a.save").show();
+        $("a.edit").show();
+
+        $('#overlay').toggle();
+        $('body').css('overflow', 'visible');
+    });
+
+    $(".export").click(function() {
+        $(".exportBlock").toggle();
+        $(".editBlock").hide();
+    });
 
     $("p.new a").click(function() {
-        debugger
         $("ul.approveBlock").toggle();
         $("p.new a").toggleClass("active");
 

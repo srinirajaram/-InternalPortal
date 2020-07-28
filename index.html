@@ -15,10 +15,21 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.verySimpleImageViewer.js"></script>
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <script type="text/javascript" src="js/jquery.marquee.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#marquee-vertical').marquee();
+            // $('#marquee-horizontal').marquee({
+            //     direction: 'horizontal',
+            //     delay: 0,
+            //     timing: 50
+            // });
+
+        });
+    </script>
 </head>
 
 <body>
-
     <div class="container-fluid">
         <!-- pag1 start -->
 
@@ -29,7 +40,7 @@
                         <a href="#"><img src="img/wbg_logo.jpg" /></a>
                     </h1>
                 </div>
-                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 18px;">
                     <div class="input-group">
                         <div class="input-group-btn search-panel">
                             <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -37,8 +48,10 @@
                      </button>
                             <ul class="dropdown-menu scrollable-dropdown" role="menu">
                                 <li><a href="#">Health and Parmacy</a></li>
-                                <li><a href="#">Parmacy</a></li>
-
+                                <li><a href="#">Retail and supply chain</a></li>
+                                <li><a href="#">Business services</a></li>
+                                <li><a href="#">Customer</a></li>
+                                <li><a href="#">Sap</a></li>
                             </ul>
                         </div>
                         <input type="hidden" name="search_param" value="all" id="search_param">
@@ -136,9 +149,7 @@
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">Boots Intranet</a></li>
                             <li><a href="#">Mytime</a></li>
-                            <li><a href="#">Photo kisok</a></li>
-                            <li><a href="#">My store data </a></li>
-                            <li><a href="#">system information system</a></li>
+
                         </ul>
                     </div>
                     <div class="col-sm-6 columnTwo">
@@ -174,60 +185,61 @@
                         </div>
                         <div class="activityBlock">
                             <h2>Recent Activity <span>Admin activity</span></h2>
-                            <ul>
-                                <li>
-                                    <p>
-                                        <strong>Abacus</strong>
-                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
-                                    </p>
-                                    <p>
-                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
-                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <strong>Abacus</strong>
-                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
-                                    </p>
-                                    <p>
-                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
-                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <strong>Abacus</strong>
-                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
-                                    </p>
-                                    <p>
-                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
-                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <strong>Abacus</strong>
-                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
-                                    </p>
-                                    <p>
-                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
-                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <strong>Abacus</strong>
-                                        <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
-                                    </p>
-                                    <p>
-                                        <span><strong>details</strong> As per the last meeting, flow is updated</span>
-                                        <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
-                                    </p>
-                                </li>
-                            </ul>
+                            <div class="vscroll">
+                                <ul id="marquee-vertical">
+                                    <li>
+                                        <p>
+                                            <strong>Abacus1</strong>
+                                            <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                        </p>
+                                        <p>
+                                            <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                            <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Abacus2</strong>
+                                            <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                        </p>
+                                        <p>
+                                            <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                            <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Abacus3</strong>
+                                            <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                        </p>
+                                        <p>
+                                            <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                            <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Abacus4</strong>
+                                            <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                        </p>
+                                        <p>
+                                            <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                            <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Abacus5</strong>
+                                            <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                        </p>
+                                        <p>
+                                            <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                            <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-
                     </div>
                     <div class="col-sm-3 columnThree">
 
@@ -252,9 +264,7 @@
                                     <li><a href="#">Unica</a></li>
                                     <li><a href="#">Boots Intranet</a></li>
                                     <li><a href="#">Mytime</a></li>
-                                    <li><a href="#">Photo kisok</a></li>
-                                    <li><a href="#">My store data </a></li>
-                                    <li><a href="#">system information system</a></li>
+
                                 </ul>
                             </div>
                             <div id="menu1" class="tab-pane fade">
@@ -270,9 +280,7 @@
                                     <li><a href="#">Unica</a></li>
                                     <li><a href="#">Boots Intranet</a></li>
                                     <li><a href="#">Mytime</a></li>
-                                    <li><a href="#">Photo kisok</a></li>
-                                    <li><a href="#">My store data </a></li>
-                                    <li><a href="#">system information system</a></li>
+
                                 </ul>
                             </div>
 
@@ -335,7 +343,7 @@
                         <a href="#"><img src="img/wbg_logo.jpg" /></a>
                     </h1>
                 </div>
-                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 18px;">
                     <div class="input-group">
                         <div class="input-group-btn search-panel">
                             <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -434,7 +442,7 @@
                     <p><b>Email id - John.smith@abc.com</b>
                     </p>
                 </div>
-                <div class="row " style="min-height:600px;">
+                <div class="row " style="min-height:480px;">
                     <div class="col-sm-3 gridGroup">
                         <h2>Applications</h2>
                         <ul class="page2Menu">
@@ -443,25 +451,19 @@
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">PC+local</a></li>
                             <li><a href="#">Boots learning management system</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
+
                             <li><a href="#">SVOC</a></li>
                             <li><a href="#">Abacus</a></li>
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">PC+local</a></li>
                             <li><a href="#">Boots learning management system</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
+                            <!-- 
                             <li><a href="#">SVOC</a></li>
                             <li><a href="#">Abacus</a></li>
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">PC+local</a></li>
-                            <li><a href="#">Boots learning management system</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
+                            <li><a href="#">Boots learning management system</a></li> -->
+
                         </ul>
                     </div>
                     <div class="col-sm-3 gridGroup2">
@@ -472,25 +474,19 @@
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">PC+local</a></li>
                             <li><a href="#">Boots learning management system</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
+
                             <li><a href="#">SVOC</a></li>
                             <li><a href="#">Abacus</a></li>
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">PC+local</a></li>
                             <li><a href="#">Boots learning management system</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
+                            <!-- 
                             <li><a href="#">SVOC</a></li>
                             <li><a href="#">Abacus</a></li>
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">PC+local</a></li>
-                            <li><a href="#">Boots learning management system</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
+                            <li><a href="#">Boots learning management system</a></li> -->
+
                         </ul>
                     </div>
                     <div class="col-sm-3">
@@ -501,25 +497,19 @@
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">PC+local</a></li>
                             <li><a href="#">Boots learning management system</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
+
                             <li><a href="#">SVOC</a></li>
                             <li><a href="#">Abacus</a></li>
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">PC+local</a></li>
                             <li><a href="#">Boots learning management system</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">SVOC</a></li>
+
+                            <!-- <li><a href="#">SVOC</a></li>
                             <li><a href="#">Abacus</a></li>
                             <li><a href="#">Unica</a></li>
                             <li><a href="#">PC+local</a></li>
-                            <li><a href="#">Boots learning management system</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
-                            <li><a href="#">testing</a></li>
+                            <li><a href="#">Boots learning management system</a></li> -->
+
                         </ul>
                     </div>
                     <div class="col-sm-3 gridGroup gridGroup2 ">
@@ -556,7 +546,7 @@
                         <a href="#"><img src="img/wbg_logo.jpg" /></a>
                     </h1>
                 </div>
-                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 18px;">
                     <div class="input-group">
                         <div class="input-group-btn search-panel">
                             <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -1168,6 +1158,10 @@
         <!-- pag4 start -->
 
         <div class="row wrapperPage3" id="page4" style="display: none;">
+            <div style="display: none" class="publishBlock">
+                <p>Page Published as a version 3 - Draft mode.<br/> Your request ID is - 0012341</p>
+                <a href="#">Ok</a>
+            </div>
 
             <header>
                 <div class="col-xs-3  ">
@@ -1175,7 +1169,7 @@
                         <a href="#"><img src="img/wbg_logo.jpg" /></a>
                     </h1>
                 </div>
-                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 18px;">
                     <div class="input-group">
                         <div class="input-group-btn search-panel">
                             <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -1183,7 +1177,10 @@
                      </button>
                             <ul class="dropdown-menu scrollable-dropdown" role="menu">
                                 <li><a href="#">Health and Parmacy</a></li>
-                                <li><a href="#">Parmacy</a></li>
+                                <li><a href="#">Retail and supply chain</a></li>
+                                <li><a href="#">Business services</a></li>
+                                <li><a href="#">Customer</a></li>
+                                <li><a href="#">Sap</a></li>
 
                             </ul>
                         </div>
@@ -1275,7 +1272,9 @@
                     <div class="rightBlock">
                         <nav>
                             <a href="#" class="edit"><img src="img/icon_edit.png" />Edit</a>
-                            <a href="#"> <img src="img/icon_save.png" />Save</a>
+                            <a href="#" class="reset" style="display: none;"><img src="img/icon_reset.png" />Reset</a>
+                            <a href="#" class="save"> <img src="img/icon_save.png" />Save</a>
+                            <a href="#" class="publish" style="display: none;"><img src="img/icon_publish.png" />Publish</a>
                             <a href="#" class="export"> <img src="img/icon_export.png" />Export</a>
                         </nav>
                         <div style="display: none" class="editBlock">
@@ -1284,6 +1283,14 @@
                             <a href="#" class="no">No</a>
 
                         </div>
+                        <div style="display: none" class="exportBlock">
+                            <img src="img/icon_exportTO.png" />
+                            <a class="pdf" href="#"> <img src="img/icon_pdf.png" />PDF</a>
+                            <a class="doc" href="#"> <img src="img/icon_doc.png" />Doc</a>
+
+                        </div>
+
+
                     </div>
                     <a href="#" class="backButton"></a>
                 </div>
@@ -1589,7 +1596,7 @@
                         <a href="#"><img src="img/wbg_logo.jpg" /></a>
                     </h1>
                 </div>
-                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 18px;">
                     <div class="input-group">
                         <div class="input-group-btn search-panel">
                             <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -1707,16 +1714,24 @@
                 </div>
                 <!-- <h1>Simple Image Viewer Plugin Example</h1> -->
                 <div id="imageViewerContainer" style="width: 764px; height:610px;"></div>
+                <map name="image-map">
+                        <area target="_blank" alt="" title="" href="about.html" coords="404,39,493,113" shape="rect">
+                    </map>
                 <script>
                     // var curect_file_path = "https://picsum.photos/1600/1200/?random";
                     $("#imageViewerContainer").verySimpleImageViewer({
-                        imageSource: "img/img_diagram.jpg?cache=none",
+
+                        imageSource: "img/img_diagram.jpg",
+
+
                         frame: ['100%', '100%'],
                         maxZoom: '900%',
                         zoomFactor: '10%',
                         mouse: true,
                         keyboard: true,
                         toolbar: true,
+                        // img.setAttribute('usemap', "#image-map");
+
                         // rotateToolbar: true
                     });
                 </script>
@@ -1734,7 +1749,7 @@
                         <a href="#"><img src="img/wbg_logo.jpg" /></a>
                     </h1>
                 </div>
-                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 21px;">
+                <div class="col-xs-5 col-xs-offset-0" style="margin-top: 18px;">
                     <div class="input-group">
                         <div class="input-group-btn search-panel">
                             <button type="button" style="border-right:0;" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
