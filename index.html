@@ -16,14 +16,15 @@
     <script src="js/jquery.verySimpleImageViewer.js"></script>
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <script type="text/javascript" src="js/jquery.marquee.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript">
         $(function() {
-            $('#marquee-vertical').marquee();
-            // $('#marquee-horizontal').marquee({
-            //     direction: 'horizontal',
-            //     delay: 0,
-            //     timing: 50
-            // });
+            //$('#marquee-vertical').marquee();
+            $('#marquee-vertical').marquee({
+                direction: 'vertical',
+                delay: 0,
+                timing: 50
+            });
 
         });
     </script>
@@ -230,6 +231,36 @@
                                     <li>
                                         <p>
                                             <strong>Abacus5</strong>
+                                            <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                        </p>
+                                        <p>
+                                            <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                            <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Abacus6</strong>
+                                            <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                        </p>
+                                        <p>
+                                            <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                            <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Abacus7</strong>
+                                            <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
+                                        </p>
+                                        <p>
+                                            <span><strong>details</strong> As per the last meeting, flow is updated</span>
+                                            <span class="updated">Date - 01/01/2020 | Time - 10.00 AM (IST)</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Abacus8</strong>
                                             <span class="updated"><strong>Updated by </strong> Sandeep@abc.com</span>
                                         </p>
                                         <p>
@@ -515,13 +546,13 @@
                     <div class="col-sm-3 gridGroup gridGroup2 ">
                         <h2>Training Content</h2>
                         <ul class="page2Menu">
-                            <li><a href="#">SVOC</a></li>
-                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Quiz</a></li>
+                            <li><a href="#">Videos</a></li>
                         </ul>
                         <h2>Integrated Process Maps</h2>
                         <ul class="page2Menu">
-                            <li><a href="#">SVOC</a></li>
-                            <li><a href="#">Abacus</a></li>
+                            <li><a href="#">Process Maps</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -648,22 +679,22 @@
                             <p>Email id - <span>Sandeep@abc.com</span> </p>
                             <img src="img/user.jpg" /></a>
                         <a onclick="tabs('content2')" onmouseover="tabHover('content2',this)" href="javascript:void(null)">
-                            <h1>Health and pharmacy</h1>
+                            <h1>Retail and supply chain</h1>
                             <p>Owner name - <span>Sandeep</span> </p>
                             <p>Email id - <span>Sandeep@abc.com</span> </p>
                             <img src="img/user.jpg" /></a>
                         <a onclick="tabs('content3')" onmouseover="tabHover('content3',this)" href="javascript:void(null)">
-                            <h1>Health and pharmacy</h1>
+                            <h1>Business services</h1>
                             <p>Owner name - <span>Sandeep</span> </p>
                             <p>Email id - <span>Sandeep@abc.com</span> </p>
                             <img src="img/user.jpg" /></a>
                         <a onclick="tabs('content4')" onmouseover="tabHover('content4',this)" href="javascript:void(null)" class="active">
-                            <h1>Health and pharmacy</h1>
+                            <h1>Customer</h1>
                             <p>Owner name - <span>Sandeep</span> </p>
                             <p>Email id - <span>Sandeep@abc.com</span> </p>
                             <img src="img/user.jpg" /></a>
                         <a onclick="tabs('content5')" onmouseover="tabHover('content5',this)" href="javascript:void(null)">
-                            <h1>Health and pharmacy</h1>
+                            <h1>Sap</h1>
                             <p>Owner name - <span>Sandeep</span> </p>
                             <p>Email id - <span>Sandeep@abc.com</span> </p>
                             <img src="img/user.jpg" /></a>
@@ -1265,11 +1296,25 @@
             </header>
 
             <div class="breadCrembBlock">
-                <div class="col-xs-6 leftBlock">
+                <div class="col-xs-8 leftBlock">
                     <p>Customer > Application > Svoc </p>
+                    <div class="dropdown draftBlock">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Version mode
+                                <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Version 1</a></li>
+                            <li><a href="#">Version 2</a></li>
+                            <li><a href="#">version 3</a></li>
+                        </ul>
+                    </div>
+
                 </div>
-                <div class="col-xs-6 ">
+                <div class="col-xs-4">
                     <div class="rightBlock">
+
+
+
+
                         <nav>
                             <a href="#" class="edit"><img src="img/icon_edit.png" />Edit</a>
                             <a href="#" class="reset" style="display: none;"><img src="img/icon_reset.png" />Reset</a>
@@ -1315,52 +1360,70 @@
                                         <ol class="appListBlock">
                                             <li>
                                                 <a href="#" class="menuList1">Purpose of the application</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+
                                             </li>
                                             <li>
                                                 <a href="#" class="menuList2">Overview of functionality and brief descriptions of boots SVOC application6</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <ol>
+                                                    <li><a href="#">Application Interfaces</a></li>
+                                                    <li><a href="#">Third Party Interfaces</a></li>
+                                                    <li><a href="#"> Components/Modules</a></li>
+                                                    <li><a href="#"> Access Requirements</a></li>
+                                                </ol>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 3</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Business Process Flow</a>
+                                                <ol>
+                                                    <li><a href="#">Sub Module Details / “Client name” Business Transactions</a></li>
+
+                                                </ol>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 4</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Application User Information </a>
+
                                             </li>
                                             <li>
-                                                <a href="#">Menu 5</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Application Usage Pattern &Busy Season and Special Processes</a>
+
                                             </li>
                                             <li>
-                                                <a href="#">Menu 6</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Support and Coverage Requirements</a>
+
                                             </li>
+                                            <li>
+                                                <a href="#">Online – Screen Inventory</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#">Security Requirements</a>
+                                                <ol>
+                                                    <li><a href="#">Authentication/Authorization Mechanism Access</a></li>
+                                                    <li><a href="#">Network Ports and Protocols to Access</a></li>
+                                                    <li><a href="#">Data Security</a></li>
+
+                                                </ol>
+
+                                            </li>
+                                            <li>
+                                                <a href="#">Computations</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#">Application Dependencies</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#">History and Future Changes Planned</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#">Languages Supported (If Multilingual)</a>
+
+                                            </li>
+                                            <!-- <li>
+                                                        <a href="#">13.	Technology Stack</a>
+        
+                                                    </li> -->
                                         </ol>
 
                                     </div>
@@ -1377,53 +1440,64 @@
 
                                         <ol class="appListBlock">
                                             <li>
-                                                <a href="#" class="menuList1">Purpose of the application</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Technology Stack</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="menuList2">Overview of functionality and brief descriptions of boots SVOC application6</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">License Requirements</a>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 3</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Technology Variances</a>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 4</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">System Architecture Diagram</a>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 5</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Database Architecture</a>
+                                                <ol>
+                                                    <li>
+                                                        <a href="#">Physical data model & Logical data model</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">List the “Client name “tables and their mapping to the transactions</a>
+                                                    </li>
+                                                </ol>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 6</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Backup, Recovery & Archival</a>
                                             </li>
+                                            <li>
+                                                <a href="#">Infrastructure Architecture Diagram for all Environments</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Number of Instances</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Performance Requirements, if any</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Setup and Rollback Procedures</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Critical Jobs / Integration Needs / Schedules</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Periodic Activities</a>
+                                                <ol>
+                                                    <li>
+                                                        <a href="#">Daily</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Weekly</a>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <a href="#">Data Replication</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Client/Mobile Installation</a>
+                                            </li>
+
                                         </ol>
 
                                     </div>
@@ -1440,52 +1514,93 @@
 
                                         <ol class="appListBlock">
                                             <li>
-                                                <a href="#" class="menuList1">Purpose of the application</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Technical Datasheets</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="menuList2">Overview of functionality and brief descriptions of boots SVOC application6</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Detail the Do’s &Don’ts and Specific Test Scenarios</a>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 3</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Monitoring</a>
+                                                <ol>
+                                                    <li>
+                                                        <a href="#">System Level Monitoring</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Application Level Monitoring</a>
+                                                    </li>
+                                                </ol>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 4</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Standard Operating Procedures (SOPs)</a>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 5</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Email Notifications</a>
                                             </li>
                                             <li>
-                                                <a href="#">Menu 6</a>
-                                                <ul>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                    <li><a href="#">Sub Menu Item</a></li>
-                                                </ul>
+                                                <a href="#">Troubleshooting</a>
+                                                <ol>
+                                                    <li>
+                                                        <a href="#">Troubleshooting Application Exceptions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Troubleshooting Common System Issues</a>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <a href="#">Restart Procedure</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ticket Analysis</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Log Locations / Enabling / Debugging Process</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Communication and Escalation Mechanism</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Third Party Escalation Mechanism</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Verification and Validation Process</a>
+                                                <ol>
+                                                    <li>
+                                                        <a href="#">Application Functionality Verification</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Performance Testing Benchmarks</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">System Integration Testing Process</a>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <a href="#">Disaster Recovery Process</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Known Issues, Bugs, Knowledgebase, Dependencies</a>
+                                                <ol>
+                                                    <li>
+                                                        <a href="#">Known Issues</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Knowledge Base</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Change History</a>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <a href="#">Audits & Compliances</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Risk Log - Risk metrics document or reports</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Technical Debt</a>
                                             </li>
                                         </ol>
 
@@ -1501,7 +1616,7 @@
 
                 <div class="col-xs-9 ">
 
-                    <div id="contentBlock1">
+                    <div id="contentBlock1" class="contentBlack">
 
                         <h2>Purpose of application</h2>
 
@@ -1519,7 +1634,7 @@
 
                         <h3>Major Functionalities of SVoC:</h3>
                         <p>SVoC acts as a customer master data for upstream and downstream applications, which stores the most updated customer data, that is been captured by multiple source systems.</p>
-                        <p>Key functionalities of SVoC are:</p>
+                        <h4>Key functionalities of SVoC are:</h4>
                         <ul>
                             <li>Receive Data from multiple source systems</li>
                             <li>Perform the Data validation and data cleaning by a level of validations and rules set in the middleware as well built-in in SVoC</li>
@@ -1532,7 +1647,7 @@
                             </li>
 
                         </ul>
-                        <p> Business Functionalities:</p>
+                        <h4> Business Functionalities:</h4>
                         <ul>
                             <li>Acts as Central Database for Boots</li>
                             <li>Stores Cleansed and most updated Customer Data</li>
@@ -1540,20 +1655,20 @@
                             <li>Share Data to other applications for Analysis purposes</li>
                             <li>Provides Composite view of customers Data</li>
                         </ul>
-                        <p>Key Features:
-                        </p>
+                        <h4>Key Features:</h4>
+
                         <p>
                             Single view of customer and central customer database dynamically built by matching data using algorithms relating to a single customer from various source systems </p>
                     </div>
 
-                    <div id="contentBlock2" style="display: none;">
+                    <div id="contentBlock2" style="display: none;" class="contentBlack">
 
                         <h2>Overview of Functionality and Brief Descriptions of Boots SVoC Application
                         </h2>
 
                         <h3>Major Functionalities of SVoC:</h3>
                         <p>SVoC acts as a customer master data for upstream and downstream applications, which stores the most updated customer data, that is been captured by multiple source systems.</p>
-                        <p>Key functionalities of SVoC are:</p>
+                        <h4>Key functionalities of SVoC are:</h4>
                         <ul>
                             <li>Receive Data from multiple source systems</li>
                             <li>Perform the Data validation and data cleaning by a level of validations and rules set in the middleware as well built-in in SVoC</li>
@@ -1566,7 +1681,7 @@
                             </li>
 
                         </ul>
-                        <p> Business Functionalities:</p>
+                        <h4> Business Functionalities:</h4>
                         <ul>
                             <li>Acts as Central Database for Boots</li>
                             <li>Stores Cleansed and most updated Customer Data</li>
@@ -1574,8 +1689,7 @@
                             <li>Share Data to other applications for Analysis purposes</li>
                             <li>Provides Composite view of customers Data</li>
                         </ul>
-                        <p>Key Features:
-                        </p>
+                        <h4>Key Features:</h4>
                         <p>
                             Single view of customer and central customer database dynamically built by matching data using algorithms relating to a single customer from various source systems </p>
                     </div>
@@ -1693,48 +1807,29 @@
                     <p> Customer > <b>Integrated Process Maps</b> </p>
                 </div>
 
-                <div id="jquery-script-menu">
-                    <div class="jquery-script-center">
-
-                        <div class="jquery-script-ads">
-                            <!-- <script type="text/javascript">
-                               
-                                google_ad_client = "ca-pub-2783044520727903";
-                                /* jQuery_demo */
-                                google_ad_slot = "2780937993";
-                                google_ad_width = 728;
-                                google_ad_height = 90;
-                                //
-                            </script> -->
-                            <script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
-                            </script>
-                        </div>
-                        <div class="jquery-script-clear"></div>
-                    </div>
-                </div>
                 <!-- <h1>Simple Image Viewer Plugin Example</h1> -->
-                <div id="imageViewerContainer" style="width: 764px; height:610px;"></div>
-                <map name="image-map">
-                        <area target="_blank" alt="" title="" href="about.html" coords="404,39,493,113" shape="rect">
+
+                <img src="img/img_diagram.jpg" usemap="#map" id="image" />
+                <div class="zoomBlock">
+                    <input type="button" class="zoomIn" value="+" onclick="javascript:ZoomIn();" />
+                    <input type="button" class="zoomOut" value="-" onclick="javascript:ZoomOut();" />
+                    <!-- <input type="button" value="Reset" onclick="javascript:ZoomReset();" /> -->
+                </div>
+
+                <map id="map" name="map">
+                        <area target="_blank" alt="svoc" title="svoc" href="index.html" coords="540,54,655,148" shape="rect">
+                        <area target="_blank" alt="cheeta digital" title="cheeta digital" href="index.html" coords="128,211,273,313" shape="rect">
+                        <area target="_blank" alt="Hadoop" title="Hadoop" href="index.html" coords="75,703,183,782,326,207,470,315" shape="rect">
+                        <area target="_blank" alt="Paragon" title="Paragon" href="index.html" coords="326,209,470,315" shape="rect">
+                        <area target="_blank" alt="SAP r3" title="SAP r3" href="index.html" coords="634,209,775,315" shape="rect">
+                        <area target="_blank" alt="Mainframe Interfaces" title="Mainframe Interfaces" href="index.html" coords="819,209,960,313,263,355" shape="rect">
+                        <area target="_blank" alt="Boots Lan" title="Boots Lan" href="index.html" coords="265,357,378,452,451,356,564,448" shape="rect">
+                        <area target="_blank" alt="Sap CRM" title="Sap CRM" href="index.html" coords="451,355,566,451" shape="rect">
+                        <area target="_blank" alt="Abacus" title="Abacus" href="index.html" coords="449,528,566,623" shape="rect">
+                        <area target="_blank" alt="Unica" title="Unica" href="index.html" coords="702,531,816,622" shape="rect">
                     </map>
-                <script>
-                    // var curect_file_path = "https://picsum.photos/1600/1200/?random";
-                    $("#imageViewerContainer").verySimpleImageViewer({
-
-                        imageSource: "img/img_diagram.jpg",
 
 
-                        frame: ['100%', '100%'],
-                        maxZoom: '900%',
-                        zoomFactor: '10%',
-                        mouse: true,
-                        keyboard: true,
-                        toolbar: true,
-                        // img.setAttribute('usemap', "#image-map");
-
-                        // rotateToolbar: true
-                    });
-                </script>
             </div>
             <footer></footer>
         </div>
@@ -1917,6 +2012,57 @@
     </div>
     <!-- Main container end -->
     <div id="overlay"></div>
+
+    <script>
+        $(function() {
+            $("#image").draggable({
+                start: function(event, ui) {
+                    ui.helper.addClass('mC');
+                },
+                stop: function(event, ui) {
+                    ui.helper.removeClass('mC');
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function ZoomIn() {
+            Zoom(1.1);
+        }
+
+        function ZoomOut() {
+            var image = document.getElementById('image');
+            // debugger;
+            var imgHt = image.height;
+            if (imgHt < 809) {
+                return false;
+            } else {
+                Zoom(0.9);
+            }
+
+        }
+
+        // function ZoomReset() {
+        //     $('#image').attr('height', '');
+        // }
+
+        function Zoom(amount) {
+            // resize image
+            var image = document.getElementById('image');
+            image.height = image.height * amount;
+
+            // resize image map
+            var map = document.getElementById('map');
+            for (var i = 0; i < map.areas.length; i++) {
+                var area = map.areas[i];
+                var coords = area.coords.split(',');
+                for (var j = 0; j < coords.length; j++) {
+                    coords[j] = coords[j] * amount;
+                }
+                area.coords = coords[0] + ',' + coords[1] + ',' + coords[2] + ',' + coords[3];
+            }
+        }
+    </script>
 </body>
 
 </html>
